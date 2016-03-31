@@ -11,16 +11,26 @@ PATHS.app_index = path.join(PATHS.app, 'index.js');
 
 const common = {
     entry: {
-        app: PATHS.app_index
+        app: PATHS.app
     },
     output: {
         path: PATHS.build,
         filename: 'bundle.js'
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.css$/,
+                loaders: ['style', 'css'],
+                include: PATHS.app
+            }
+        ]
     }
 };
 
 if (TARGET === 'start' || !TARGET) {
     module.exports = merge(common, {
+        devtool: 'eval-source-map',
         devServer: {
             contentBase: PATHS.build,
 
