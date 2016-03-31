@@ -1,24 +1,25 @@
 {
-    "name": "webpack_react_kanban_app",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ttakamura/webpack_react_kanban_app.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ttakamura/webpack_react_kanban_app/issues"
-    },
-    "homepage": "https://github.com/ttakamura/webpack_react_kanban_app#readme",
-    "devDependencies": {
-        "webpack": "^1.12.14"
-    }
+  "name": "webpack_react_kanban_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttakamura/webpack_react_kanban_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttakamura/webpack_react_kanban_app/issues"
+  },
+  "homepage": "https://github.com/ttakamura/webpack_react_kanban_app#readme",
+  "devDependencies": {
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
