@@ -10,6 +10,8 @@ const PATHS = {
 };
 PATHS.app_index = path.join(PATHS.app, 'index.js');
 
+process.env.BABEL_ENV = TARGET;
+
 const common = {
     entry: {
         app: PATHS.app
