@@ -1,4 +1,4 @@
-import uuid from 'note-uuid';
+import uuid from 'node-uuid';
 import alt from '../libs/alt';
 import NoteActions from '../actions/NoteActions';
 
@@ -14,9 +14,9 @@ class NoteStore {
             notes: notes.concat(note)
         });
     }
-    update(updateNote){
+    update(updatedNote){
         const notes = this.notes.map(note => {
-            if (note.id === updateNote.id){
+            if (note.id === updatedNote.id){
                 return Object.assign({}, note, updatedNote);
             }else{
                 return note;
